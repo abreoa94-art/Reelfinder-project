@@ -266,6 +266,17 @@ h1{
 
 }
 
+.overlay:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: o;
+    left: 0;
+    right: 0;
+    background-color: #1d3557;
+    pointer-events: none;
+}
+
 
 
 /* SEARCH */
@@ -323,8 +334,7 @@ select{
 .movies{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .movie{

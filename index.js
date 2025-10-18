@@ -23,8 +23,7 @@ let currentMovies = []
 function displayMovies(movieList){
        moviesWrapper.innerHTML = movieList.slice(0, 6).map((movie) => {
         return`
-        <div class="movies__wrapper">
-        <div class="movies">
+        <div class="movie">
         <figure class="movie__reel--img--wrapper">
         <img class="movie__poster" src="" alt="">
         </figure>
@@ -32,7 +31,6 @@ function displayMovies(movieList){
         <h2 class="movie__title">${movie.Title}</h2>
         <h4 class="movie__year">${movie.Year}</h4>
         <button class="learn__more--btn">Learn More</button>
-        </div>
         </div>
         `
      }).join("")
