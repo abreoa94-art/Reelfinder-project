@@ -15,13 +15,10 @@ let currentMovies = []
 
 //  rendering movies / calling api
 async function renderMovies(searchTerm){
+    moviesWrapper.classList.add('movies__loading')
     const response = await fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=858b2ce0`)
     const data = await response.json('')
-    moviesWrapper.classList += ' movies__loading'
-    if (!movie){
-        movie = await renderMovies
-    }
-
+  
     moviesWrapper.classList.remove('movies__loading')
     currentMovies = data.Search
     displayMovies(currentMovies)
@@ -63,5 +60,12 @@ function sortChange(event){
     displayMovies(sortedMovies)
 }
 
-// loading 
+// open/close menu
 
+function openMenu(){
+    document.body.classList += "menu--open"
+}
+
+function closeMenu(){
+    document.body.classList.remove('menu--open')
+}
