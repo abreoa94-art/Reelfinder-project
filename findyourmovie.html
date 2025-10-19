@@ -18,22 +18,22 @@
                     <ul class="nav__link--list">
                         <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Home</a></li>
                         <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Find your Movie</a></li>
-                       <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><button class="contact__btn">Contact</button></a></li>
+                        <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><button class="contact__btn">Contact</button></a></li>
                     </ul>
                 </nav>
-                    <div class="header__container">
-                        <div class="header__row">
-                            <div class="header__description">
-                                <h1><span class="nblue">Browse our movies</span></h1>
-                                <div class="input__wrapper">
-                                    <form action="">
-                                        <input class="input__search" type="text" id="search-input" placeholder="Search by name and find the best..." onchange="searchChange(event)">
-                                    </form>
-                                    <div class="search__wrapper">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
+                <div class="header__container">
+                    <div class="header__row">
+                        <div class="header__description">
+                            <h1><span class="nblue">Browse our movies</span></h1>
+                            <div class="input__wrapper">
+                                <form action="">
+                                    <input class="input__search" type="text" id="search-input" placeholder="Search by name and find the best..." onchange="searchChange(event)">
+                                </form>
+                                <div class="search__wrapper">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
             </header>
@@ -52,16 +52,16 @@
                     </select>
                 </div>
                 <div class="movies__wrapper">
-                    <div class="movies">
+                    <div class="movies movies__loading">
                         <figure class="movie__reel--img--wrapper">
                             <img class="movie__poster" src="" alt="">
                         </figure>
                         <h2 class="movie__title"></h2>
                         <h4 class="movie__year"></h4>
                         <button class="learn__more--btn"></button>
+                        <i class="fas fa-spinner movies__loading--spinner"></i>
                     </div>
                 </div>
-                <div class="overlay"></div>
             </div>
         </div>
     </section>

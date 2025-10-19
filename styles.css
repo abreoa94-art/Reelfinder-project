@@ -250,33 +250,40 @@ h1{
     text-align: center;
 }
 
-.overlay{
-    background-image:url(https://media.timeout.com/images/106191999/750/562/image.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    background-attachment: fixed;
+
+.movies__loading{
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 60px;
+    color: #fff;
 
 }
 
-.overlay:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: o;
-    left: 0;
-    right: 0;
-    background-color: #1d3557;
-    pointer-events: none;
+.movies__loading--spinner{
+    display: none !important;
+
 }
 
+.movies__loading .movies__loading--spinner{
+    display: block !important;
+}
+
+.fa-spinner{
+    animation: rotate 600ms infinite linear;
+}
+
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 
 /* SEARCH */
@@ -284,7 +291,7 @@ h1{
 #search-page{
     background-color: #1d3557;
    flex: 1;
-   height: 50vh;
+   height: 100%;
    
 }
 
