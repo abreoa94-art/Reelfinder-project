@@ -173,9 +173,13 @@ ul{
 /* NAVIGATION BAR */
 
 .company-logo{
-    width: 100px;
+    width: 400px;
     height: 50%;
     border-radius: 50%;
+}
+
+img{
+    width: 100%;
 }
 
 nav{
@@ -456,7 +460,14 @@ select{
     display: flex;
 }
 
-
+@media (max-width: 900px){
+ .nav__link--list{
+        display: none;
+    }
+    .btn__menu{
+        display: block;
+    }
+}
 @media (max-width: 768px){
     .header__description{
         padding: 0 24px;
@@ -485,10 +496,5 @@ select{
 
 @media (max-width: 550px){
 
-    .nav__link--list{
-        display: none;
-    }
-    .btn__menu{
-        display: block;
-    }
+   
 }
