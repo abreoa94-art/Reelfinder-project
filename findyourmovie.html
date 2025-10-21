@@ -47,14 +47,16 @@
             </li>
         </ul>
         <button class="btn__menu" onclick="openMenu()">
-            <div class="menu__backdrop">
-            </div>
-                <i class="fas fa-bars"></i>
-                <button
-                  class="btn__menu btn__menu--close"
-                  onclick="closeMenu()"
-                >
-                  <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div class="menu__backdrop">
+        <button
+        class="btn__menu btn__menu--close"
+        onclick="closeMenu()"
+        >
+        <i class="fas fa-times"></i>
+    </button>
                   <ul class="menu__links">
                     <li class="menu__list">
                       <a href="#" class="menu__link" onclick="closeMenu()"
@@ -75,8 +77,6 @@
                       >
                     </li>
                   </ul>
-                </button>
-            </button>
           </div>
         </nav>
         <div class="header__container">
@@ -89,7 +89,7 @@
                     class="input__search"
                     type="text"
                     id="search-input"
-                    placeholder="Search by name and find the best..."
+                    placeholder="Search by name"
                     onchange="searchChange(event)"
                   />
                 </form>
@@ -125,9 +125,7 @@
           </div>
           <div class="movies__wrapper">
             <div class="movies">
-              <figure class="movie__reel--img--wrapper">
                 <img class="movie__poster" src="" />
-              </figure>
               <h2 class="movie__title"></h2>
               <h4 class="movie__year"></h4>
               <button class="learn__more--btn"></button>

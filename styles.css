@@ -173,8 +173,8 @@ ul{
 /* NAVIGATION BAR */
 
 .company-logo{
-    width: 400px;
-    height: 250px;
+    width: 100px;
+    height: 50%;
     border-radius: 50%;
 }
 
